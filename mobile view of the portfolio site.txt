@@ -1,0 +1,112 @@
+mobile view of the portfolio site
+
+LOGO 
+
+HAMBURGER MENU
+
+HELLO!
+
+HERO IMG
+
+
+FOOTER
+
+<div class="contact">
+
+
+in the head code 
+<script src=" defer></script>
+
+css 
+
+
+-- link :root 
+this will allow you to have access to all of your colors from the get-go so that you have access and so that it doesn't require nearly as much work --
+
+
+body {
+max-width: 900px;
+margin: 0 auto;
+display: block;
+font-size: 1.2em;
+}
+
+header .logo {
+width: 100%
+}
+
+main .logo {
+width: 59%;
+}
+
+header {
+background-color: 
+display: grid;
+grid-template-columns: 150px 1fr'
+}
+
+#logo_link {
+justify-self: center;
+align-self: center;
+grid-row: both;
+}
+
+#menu {
+display: block;
+font-size: 1.5em;
+padding: 3px 7px 6px; 
+position: absolute;
+top: 1rem;
+right: 1rem;
+}
+
+#menu:before{
+content: "
+}
+
+#menu:open::before{
+content: "X";
+}
+
+#menu:after{
+content: "X"
+}
+
+
+nav {
+display: none;
+grid-column: 2/3;
+grid-row: 2/3
+}
+
+
+-- this is for the links within the website --
+a {
+text-decoration: none;
+color:
+}
+
+Header and footer, make sure that the colors are same. 
+
+
+
+footer {
+text-align: center;
+padding: 5% 0;
+}
+
+.social img{
+width: 15%;
+}
+
+.social a:nth-of-type(2){
+margin: 0 5%;
+}
+
+
+-- can add javascript 
+
+
+
+
+
