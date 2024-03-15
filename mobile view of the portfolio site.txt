@@ -108,6 +108,31 @@ margin: 0 5%;
 -- can add javascript 
 
 
+-- Hero Section...
+-- The Code for the Hero Section for having the images Cycle Though Every 5 seconds.
+// Array of image URLs
+var images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+
+// Index to keep track of the current image
+var currentIndex = 0;
+
+// Function to cycle through images
+function cycleImages() {
+  // Update the src attribute of the image
+  document.getElementById('current-image').src = images[currentIndex];
+  
+  // Move to the next image
+  currentIndex++;
+  
+  // Reset index if it goes beyond the array length
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+}
+
+// Call the cycleImages function every few seconds (e.g., every 5 seconds)
+setInterval(cycleImages, 5000); // Adjust the interval as needed (in milliseconds)
+
 
 
 
