@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salt Photography LLC</title>
+    <!-- bootstrap link incorporated for future usage to beta test-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1> Salt Photography LLC</h1>
+        <div class="title">Salt Photography</div>
         <nav>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -16,15 +18,19 @@
                 <li><a href="contactus.html">Contact</a></li>
             </ul>
         </nav>
-        <nav>
-            <img src="images/salt photography_logo_2.png" alt="logo for salt photography.">
-        </nav>
+      <!---<nav>
+            <img class="logo" src="images/salt photography_logo_2.png" alt="logo for salt photography.">
+        </nav> -->  
     </header>
 
     <main>
+        <!-- here is my parallax scrolling effect-->
+        <div class="parallax">
         <!-- Hero Images Here-->
         <section>
-            <h2>Telling Your Story</h2>
+            <div class="container">
+                <div class="content">Telling Your Story</div>
+            </div>
             <p></p>
             <img src="" alt="">
             <!-- add heading images and javascript here that will cycle through various images together.-->
@@ -32,6 +38,28 @@
         </section>
 
         <section>
+            <div class="textalign">It all Starts with Finding Your Voice.</div>
+        </section>
+        <!-- make sure to add itailized for the text so that it flows and looks nice, may need to add several to avoid incompadibility issues between browsers. -->
+
+        <div>
+            <!-- will need a class tag to specify the parameters of where the photos are, and -->
+            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <!-- need to get headshot, shortened, and size set to auto-->
+        </div>
+        <section>
+            <!-- create 4 boxes separated from one another. -->
+            <div class="container-box">
+                <div class="box">Together</div>
+                <div class="box">Together</div>
+                <div class="box">Together</div>
+                <div class="box">Together</div>
+            </div>
+
             <h3>Together.</h3>
             <h3>WE.</h3>
             <h3>Triumph</h3>
@@ -41,11 +69,6 @@
         </section>
 
         <!-- Maybe add this section to another piece within the Portfolio. -->
-
-        <section>
-            <h4>It all Starts with Finding Your Voice.</h4>
-        </section>
-        <!-- make sure to add itailized for the text so that it flows and looks nice, may need to add several to avoid incompadibility issues between browsers. -->
     
         <section>
             <h2>This is the Place</h3>
@@ -58,11 +81,18 @@
         <!-- create a link to the portfolio section and include it here, this would be wise! -->
 
         <section> 
+            <div class="">
+                <img class="pictureofme" src="images/" alt="picture of the Photography, headshot, with a rounded circular border around them.">
+                <!-- need to get headshot, shortened, and size set to auto-->
+            </div>
+            <div class="aboutme-box">
             <h1>Contact Me</h1>
             <h2>"Conner Gardiner [Day. One. Repeat.]"</h2>
             <p>That day one energy, the feeling, excitement and seemingly uncontainable joy from embracing the beauty of the journey. 
             That is the kind of energy that I live for and try to emulate in practice, everyday, One. Day. Energy. Repeat. Contact Me for more.</p> 
+            </div>
         </section>
+
 
         <section>
             <div class="container">
@@ -77,17 +107,26 @@
                 </p>
               </div>
         </section>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </div>
     </main>
 
 
     <footer>
-        <img src="" alt=""> 
-        <!-- add the logo here and make it so that it small-->
-        <!-- add all of the links and icons down here for social media-->
-        <!-- add the javascript that I've already written for a different footer, integrate here and go!-->
-        <a href="site-plan.html">Site Plan</a>
-        <p>&copy; 2024 Salt Photography LLC. All rights reserved.</p>
+    <div class="footer">
+        <div class="line"></div>
+            <img src="" alt=""> 
+            <!-- add the logo here and make it so that it small-->
+            <!-- add all of the links and icons down here for social media-->
+            <!-- add the javascript that I've already written for a different footer, integrate here and go!-->
+
+            <a class ="footer.element" href="site-plan.html">Site Plan</a>
+            <a class ="footer.element" href="portfolio.html">Portfolio</a>
+            <a class ="footer.element" href="contactus.html">Contact</a>
+            <p>&copy; 2024 Salt Photography LLC. All rights reserved.</p>
+            <a href="#" class="icon icon-facebook">Facebook</a>
+            <a href="#" class="icon icon-instagram">Instagram</a>
+            </div>
     </footer>
 </body>
 </html>
