@@ -43,7 +43,53 @@
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
+    footer {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding top and bottom */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width of the footer content */
+    margin: 0 auto; /* Center align */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space evenly between items */
+    align-items: center; /* Center align vertically */
+}
+
+.left-section,
+.right-section {
+    width: 45%; /* Width of each section */
+    padding: 0 20px; /* Padding left and right */
+}
+
+.divider {
+    width: 1px; /* Width of the divider line */
+    height: 50px; /* Height of the divider line */
+    background-color: #fff; /* Color of the divider line */
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .left-section,
+    .right-section {
+        width: 100%; /* Set width to 100% for smaller screens */
+        margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    }
+    .divider {
+        width: 100%; /* Set width to 100% for full width divider */
+        height: 1px; /* Reduce height for a thinner divider */
+    }
+}
+
+
+
+}
+
 </style>
 </head>
 <body>
@@ -63,4 +109,19 @@
       <!-- FAQ 2 -->
       <div class="faq">
         <div class="question">Question 2: Why do we use it?</div>
-        <div class
+        <footer>
+            <div class="footer-container">
+                <div class="left-section">
+                    <!-- Left section content -->
+                    <h3>Left Section</h3>
+                    <p>This is the content for the left section of the footer.</p>
+                </div>
+                <div class="divider"></div> <!-- Divider line -->
+                <div class="right-section">
+                    <!-- Right section content -->
+                    <h3>Right Section</h3>
+                    <p>This is the content for the right section of the footer.</p>
+                </div>
+            </div>
+        </footer>
+        
