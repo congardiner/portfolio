@@ -33,7 +33,7 @@
                 <div class="content">Telling Your Story</div>
             </div>
             <p></p>
-            <img src="" alt="">
+            <img id="slider" src="" alt="">
             <!-- add heading images and javascript here that will cycle through various images together.-->
             <!-- code for this has been linked in my notepad for export in the following week.-->
         </section>
@@ -43,16 +43,39 @@
         </section>
         <!-- make sure to add itailized for the text so that it flows and looks nice, may need to add several to avoid incompadibility issues between browsers. -->
 
-        <div>
+        <div id="image-container">
             <!-- will need a class tag to specify the parameters of where the photos are, and -->
-            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
-            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
-            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
-            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
-            <img class="" src="images/" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="slider" src="images/nightscape.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="slider" src="images/pool-reflection.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+            <img class="slider" src="images/golden-hour.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
+           <!-- <img class="" src="images/c" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds."> -->
+          
             <!-- need to get headshot, shortened, and size set to auto-->
         </div>
         <section>
+
+        <!-- this is the javascript for the interval timer that I created for the images.-->
+        <script>
+            // JavaScript for changing images on an interval
+            var images = ['images/nightscape.jpg', 'images/pool-reflection.jpg', 'images/golden-hour.jpg']; // Array of image URLs
+            var currentIndex = 0; // Index to track the current image
+        
+            function changeImage() {
+                // Update the image source with the next image URL
+                var sliders = document.getElementsByClassName('slider');
+                for (var i = 0; i < sliders.length; i++) {
+                    sliders[i].src = images[currentIndex];
+                }
+        
+                // Increment the index or reset to 0 if it exceeds the length of the array
+                currentIndex = (currentIndex + 1) % images.length;
+            }
+        
+            // Call the changeImage function every 3 seconds (adjust as needed)
+            setInterval(changeImage, 3500);
+        </script>
+
+
             <!-- create 4 boxes separated from one another. -->
             <div class="container-box">
                 <div class="box">Together</div>
@@ -94,22 +117,43 @@
             </div>
         </section>
 
-
-        <section>
-            <div class="container">
-            <!-- Need to add line break within the FAQ as seen within other pages.-->
-            <h4>FAQ</h4>
-                <p>
-              A. How long are photoshots typically, what should I expect? For portraits, anticipate for 45 minutes to an hour. Other projects may vary, but will coordinate beforehand.
-              B. Do I need to release printing rights? 
-              C. What is the turn around time like? 1-2 weeks deliverable via smugmug which will provide you a gallery with the option to download your photos, purchase prints, and rights to do are granted therein. 
-              D. What’s required to make a reservation? Signage of the disclosure and deposit. 
-              E. How do I get started? Simply click contact, fill out the dets and lets get collaberating in the real life. 
-                </p>
-              </div>
-        </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </div>
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-section">
+              <!-- FAQ 1 -->
+              <div class="faq">
+                <div class="question">A. How long are photoshots typically, what should I expect?</div>
+                <div class="answer">For portraits, anticipate for 45 minutes to an hour. Other projects may vary, but will coordinate beforehand.</div>
+              </div>
+              
+              <!-- FAQ 2 -->
+              <div class="faq">
+                <div class="question">B. Do I need to release printing rights? </div>
+                <div class="answer">All rights to print will be released once editing has finished, as well as the signage of those rights have been allocated to you, disclosed between myself and you as the client to protect our created intellectual property.</div>
+              </div>
+              
+              <!-- FAQ 3 -->
+              <div class="faq">
+                <div class="question">C. What is the turn around time like?</div>
+                <div class="answer">1-2 weeks deliverable via smugmug which will provide you a gallery with the option to download your photos, purchase prints, and rights to do are granted therein</div>
+              </div>
+              
+              <!-- FAQ 4 -->
+              <div class="faq">
+                <div class="question">D. What’s required to make a reservation?</div>
+                <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</div>
+              </div>
+              
+              <!-- FAQ 5 -->
+              <div class="faq">
+                <div class="question">E. How do I get started?</div>
+                <div class="answer">Simply click contact, fill out the dets and lets get collaberating in the real life.</div>
+              </div>
+            </div>
+          </div>
     </main>
 
 
@@ -120,13 +164,14 @@
             <!-- add the logo here and make it so that it small-->
             <!-- add all of the links and icons down here for social media-->
             <!-- add the javascript that I've already written for a different footer, integrate here and go!-->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
 
             <a class ="footer.element" href="site-plan.html">Site Plan</a>
             <a class ="footer.element" href="portfolio.html">Portfolio</a>
             <a class ="footer.element" href="contactus.html">Contact</a>
             <p>&copy; 2024 Salt Photography LLC. All rights reserved.</p>
-            <a href="#" class="icon icon-facebook">Facebook</a>
-            <a href="#" class="icon icon-instagram">Instagram</a>
+           <!-- Add font awesome icons -->
             </div>
     </footer>
 </body>
