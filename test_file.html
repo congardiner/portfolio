@@ -49,25 +49,54 @@
     padding: 20px 0; /* Padding top and bottom */
 }
 
-.footer-container {
-    max-width: 1200px; /* Maximum width of the footer content */
-    margin: 0 auto; /* Center align */
-    display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space evenly between items */
-    align-items: center; /* Center align vertically */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding at the top and bottom */
 }
 
-.left-section,
+.footer-container {
+    max-width: 1200px; /* Maximum width for the footer content */
+    margin: 0 auto; /* Center the footer horizontally */
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Align items vertically */
+}
+
 .right-section {
-    width: 45%; /* Width of each section */
-    padding: 0 20px; /* Padding left and right */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.right-section img {
+    width: 50px; /* Set width for the logo */
+    margin-right: 20px; /* Add some spacing between the logo and text */
 }
 
 .divider {
-    width: 1px; /* Width of the divider line */
-    height: 50px; /* Height of the divider line */
-    background-color: #fff; /* Color of the divider line */
+    height: 30px; /* Set height for the divider */
+    width: 1px; /* Set width for the divider */
+    background-color: #fff; /* Color of the divider */
+    margin: 0 20px; /* Add some spacing around the divider */
 }
+
+.left-section {
+    display: flex;
+}
+
+.footer-element {
+    color: #fff; /* Text color for footer links */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 20px; /* Add some spacing between links */
+}
+
+/* Style for social media icons */
+.fa {
+    color: #fff; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin-right: 10px; /* Add some spacing between icons */
+}
+
 
 /* Media query to adjust layout for smaller screens */
 @media (max-width: 768px) {
