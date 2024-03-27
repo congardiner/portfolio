@@ -94,7 +94,7 @@ nav ul li a {
     bottom: 0;
     width: 40%; /* Adjust width according to your design */
     height: 2px; /* Adjust thickness according to your design */
-    background-color: black; /* Adjust color according to your design */
+    background-color: #94D1BE; /* Adjust color according to your design */
 }
 
 .content::before {
