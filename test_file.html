@@ -3,154 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ Page</title>
+<title>Responsive JavaScript Footer</title>
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
-  /* General styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+  /* Footer styles */
+  .footer {
+    background-color: #333;
     color: #fff;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
-  }
-  h1 {
+    padding: 20px;
     text-align: center;
-  }
-  .faq-section {
-    margin-top: 50px;
-  }
-  .faq {
-    margin-bottom: 30px;
-  }
-  .question {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .answer {
-    font-size: 16px;
-    line-height: 1.6;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
-  /* Gray box container */
-  .faq-container {
-    background-color: #555;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    footer {
-    background-color: #333; /* Footer background color */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Padding top and bottom */
-}
-
-.footer {
-    background-color: #333; /* Background color for the footer */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Padding at the top and bottom */
-}
-
-.footer-container {
-    max-width: 1200px; /* Maximum width for the footer content */
-    margin: 0 auto; /* Center the footer horizontally */
+  /* Social media icons */
+  .social-icons {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-    align-items: center; /* Align items vertically */
-}
+    align-items: center;
+    margin-bottom: 10px; /* Add space between icons and divider */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  /* Divider styles */
+  .divider {
+    display: none; /* Hide divider on small screens */
+  }
 
-.right-section {
-    display: flex;
-    align-items: center; /* Align items vertically */
-}
-
-.right-section img {
-    width: 50px; /* Set width for the logo */
-    margin-right: 20px; /* Add some spacing between the logo and text */
-}
-
-.divider {
-    height: 30px; /* Set height for the divider */
-    width: 1px; /* Set width for the divider */
-    background-color: #fff; /* Color of the divider */
-    margin: 0 20px; /* Add some spacing around the divider */
-}
-
-.left-section {
-    display: flex;
-}
-
-.footer-element {
-    color: #fff; /* Text color for footer links */
-    text-decoration: none; /* Remove underline from links */
-    margin-right: 20px; /* Add some spacing between links */
-}
-
-/* Style for social media icons */
-.fa {
-    color: #fff; /* Icon color */
-    font-size: 20px; /* Icon size */
-    margin-right: 10px; /* Add some spacing between icons */
-}
-
-
-/* Media query to adjust layout for smaller screens */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
+  @media (min-width: 768px) {
+    .footer {
+      justify-content: center; /* Center content on larger screens */
     }
-    .left-section,
-    .right-section {
-        width: 100%; /* Set width to 100% for smaller screens */
-        margin-bottom: 20px; /* Add margin at the bottom for spacing */
-    }
+  
     .divider {
-        width: 100%; /* Set width to 100% for full width divider */
-        height: 1px; /* Reduce height for a thinner divider */
+      display: block; /* Show divider on larger screens */
+      height: 20px;
+      width: 2px;
+      background-color: #fff;
+      margin: 0 20px; /* Add spacing around divider */
     }
-}
-
-
-
-}
-
+  }
 </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>Frequently Asked Questions</h1>
-  
-  <!-- Gray box container for FAQ section -->
-  <div class="faq-container">
-    <div class="faq-section">
-      <!-- FAQ 1 -->
-      <div class="faq">
-        <div class="question">Question 1: What is Lorem Ipsum?</div>
-        <div class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-      </div>
-      
-      <!-- FAQ 2 -->
-      <div class="faq">
-        <div class="question">Question 2: Why do we use it?</div>
-        <footer>
-            <div class="footer-container">
-                <div class="left-section">
-                    <!-- Left section content -->
-                    <h3>Left Section</h3>
-                    <p>This is the content for the left section of the footer.</p>
-                </div>
-                <div class="divider"></div> <!-- Divider line -->
-                <div class="right-section">
-                    <!-- Right section content -->
-                    <h3>Right Section</h3>
-                    <p>This is the content for the right section of the footer.</p>
-                </div>
-            </div>
-        </footer>
-        
+<div class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="divider"></div>
+  <div>&copy; 2024 Your Website</div>
+</div>
+
+
+
+</body>
+</html>
