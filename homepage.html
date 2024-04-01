@@ -80,14 +80,31 @@
             <h3>Together.</h3>
             <h3>WE.</h3>
             <h3>Triumph</h3>
-            <div>There is no single person in the art of collaboration.</div>
-            
+
+            <div class=".text-container-typetext">
+                <h1>There is no single person in the art of collaboration.</h1>
+                <p id="demo"></p>
+            </div>
             <!-- need to add testimonials here -->
             <!-- 4 boxes within the grid element, stacked as shown within my site outline. -->
-
+            <script>
+                var i = 0;
+                var txt = '"Your Life can either be a tragedy, or a Heros Journey of who you became along the way."';
+                var speed = 50;
+                
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                
+            // Call the typeWriter function when the page loads
+            window.onload = typeWriter;
+            </script>
+                
         <!-- Maybe add this section to another piece within the Portfolio. -->
-
-        <div class="textalign">"Your Life can either be a tragedy, or a Hero's Journey of who you became along the way." ~Conner Gardiner</div>
         <!-- create a link to the portfolio section and include it here, this would be wise! -->
 
         <section class="about-section">

@@ -358,7 +358,7 @@ form {
   
 /* this is for my social media icons, rounded at the bottom of each page */
 .fa {
-  padding: 20x;
+  padding: 20px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -419,7 +419,7 @@ form {
 }
 
   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
