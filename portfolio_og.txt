@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salt Photography LLC</title>
-    <link rel="stylesheet" href="styles/style.css">
     <!-- bootstrap link incorporated for future usage to beta test-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
@@ -24,45 +26,16 @@
 
 
     <main>
-
         <!-- this will be a repaste, or similiar to the homepage as it will recycle through 5 different images-->
         <!-- maybe have text though the middle of the images?-->
-        <div id="image-container">
-            <!-- will need a class tag to specify the parameters of where the photos are, and -->
-            <img class="slider" src="images/river-conner.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds."> 
-            <img class="slider" src="images/pexels-eberhard-grossgasteiger-691668.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds.">
-            <img class="slider" src="images/pexels-brad-switzer-11716072.jpg" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds."> 
-           <!-- <img class="" src="images/c" alt="picture of the photos that I've taken, as a collage, set in interval timer to cycle through every 5-7 seconds."> -->
-          
-            <!-- need to get headshot, shortened, and size set to auto-->
-          </div>
-    
-        <!-- this is the javascript for the interval timer that I created for the images.-->
-        <script>
-            var images = document.querySelectorAll('.slider'); // Select all images with the class 'slider'
-            var currentIndex = 0; // Index to track the current image
-        
-            function changeImage() {
-                // Hide the current image
-                images[currentIndex].style.display = 'none';
-        
-                // Increment the index or reset to 0 if it exceeds the length of the array
-                currentIndex = (currentIndex + 1) % images.length;
-        
-                // Show the next image
-                images[currentIndex].style.display = 'block';
-            }
-        
-            setInterval(changeImage, 5000); // Call the changeImage function every 5 seconds
-        </script>
+        <section>
+        </section>
 
         <div> 
             <!-- need to add the spacing element here, line -->
             <h1 class="content">Finding the Why Behind Your Story</h1>
-        </div>
-        <img src="images/pexels-keegan-houser-1478685.jpg" alt="image from pexels, source accredited to the owner." class="rounded-img">
-        <div class="rounded-container-1">
             <p>
+                1-- Envisioning:
                 Visualizing the experience, the fine details, what it looks like, the smells, the sensation, why is that any different than where you are currently? Why do you want to change? Why would your life be different? Why would you be different?
             </p>    
                 <p>Everyone wants to have the best of X,Y,and Z but they lack the fundamental systems to progress towards accomplishing worthwhile goals.</p> 
@@ -72,12 +45,17 @@
                 <p>>> Do you have core values, if so, identify very clearly what they are and write them down!</p>  
         </div>
 
+        <section> 
+            <!-- add the image tag here along with a another box for text (block)-->
+        </section>
+
         <section>
+         <div> 
             <!-- need to add the spacing element here, line -->
             <h1 class="content">Recreate the Journey</h1>
+            <p>2-- The Creation of Your Goal:</p>
             <!-- maybe make this a heading, something to pop and stand as a landmark for the landing of the site. -->
-            <img src="images/pexels-pixabay-268533.jpg" alt="image from pexels, source accredited to the owner." class="rounded-img">
-        <div class="rounded-container-1"> 
+
             <h3>How is this actually done?</h3>
             <!-- maybe itialicize these portion, make it pop or stand out amongst the rest. -->
 
@@ -85,18 +63,12 @@
             
             <p>So what actually happened then? What separates the conditions of this?</p>
             </p>
+            <h1 class="content">The Creation of Systems </h1> 
+            <h2>4-- "Doing rather than just trying"</h2>
             <p>It is not enough to just make the attempt, to put in the time, or to make it the gym. While those are apart of the system itself, they are only a step in the process, not the process itself.</p>  
-         </div>
-        </section>
-
-        <section>
-            <div class="content">Optimizing Our Flow</div>
-        </section>
-        <section>
-        <img src="images/solitude.jpg" alt="image from pexels, source accredited to the owner." class="rounded-img">
-        <div class="grid-container-1">
-            <div class="rounded-container-1">
-                <p>So, how does one simply 'optimize' their flow? Well for conveniency, we broke it down into a few steps, to make life simple of course!</p>
+      
+                <h3>Optimizing our 'flow':</h3>
+      
                 <p>1. time</p>
                 <p>2. place</p>
                 <p>3. preparation</p>
@@ -105,10 +77,16 @@
                 <p>6. breaks (the promodoro effect)</p>
                 <p>7. rinse, repeat and evaluate</p>
       
-                <p>Simply put, we must plan to make the 'perfect effort' into the step of the system, not just the act of attempting. This is the defining label between trying and doing.</p>
-            </div>
-        </div>
+                Simply put, we must plan to make the 'perfect effort' into the step of the system, not just the act of attempting. This is the defining label between trying and doing. </h2>
+         </div>
         </section>
+
+        <div>
+            <!-- this will just be a text box.-->
+            <p></p>
+            
+        </div>
+
         <section>
             <!-- journey image add here with img tag-->
             <!-- add another img box with text for -->
@@ -117,8 +95,6 @@
         </section>
 
         <section>
-            <img src="images/pexels-laura-tancredi-7078666.jpg" alt="image from pexels, source accredited to the owner." class="rounded-img">
-        <div class="rounded-container-1">
             <h2>Evaluating the progress (short-term and long-term)</h2>
             <p>The Ideal Perfect Motivation Vs Just Getting Started:</p>
             <p>Definitive Crossroads: The Act of Choosing</p>
@@ -126,7 +102,11 @@
             <h2>Appreciating the Journey</h2>
             <p> Avoiding the act of comparison, the 'thief of joy' and the very instigator that prevents us from seeing our true selves. </p>
             <p> The beautiful process of reaching into the beyond and seeing what comes out. </p>
-        </div>
+            <p> (Could make this a blogpost section of sorts, combining my favorite elements of photography, motivations words of inspiration, creative wisdom, all into one great place!)</p>
+        </section>
+
+        <section>
+            <p>Have you ever wondered what it takes to capture timeless messages that can be saved for generations to come, well, then you've come to the right place. This is no ordinary photography boutique, landing page, or in home on the side photography, this is Salt Photography, a name alone doesn't earn itself a reputation without the legwork to back it up. Here is where my team and I come in. Yes, this is a collaborated approach, no single man takes the show and does it all.</p>
         </section>
 
         <section class="about-section">
@@ -169,6 +149,7 @@
                     <a class ="footer.element" href="portfolio.html">Portfolio</a>
                     <a class ="footer.element" href="contactus.html">Contact</a>
                 </div>
+               <!-- Add font awesome icons -->
                 </div>
     </footer>
 </body>
