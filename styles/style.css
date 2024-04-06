@@ -221,38 +221,73 @@ h1 {
 
 /* here are my rounded elements for the portfolio page */
 
-.gird-container-1{
-  display: grid;
-  justify-content: space-around;
-  grid-template-columns: repeat(4, 1fr 1fr 1fr);
-  padding: 10px;
-  gap: 10px;
+.container-1 {
+  position: relative;
+}
+
+.container-wrapper {
+    position: relative; /* Set position to relative */
+    text-align: center; /* Center align the contents */
 }
 
 
 .rounded-container-1 {
-    height: 50%;
-    width: 50%;
+    position: absolute; /* Set position to absolute */
+    top: calc(50% - 425px); /* Adjust top position to move it up */
+    right: 0; /* Align to the right */
+    transform: translate(0, -50%); /* Move it up by 50% of its own height */
+    max-width: calc(50% - 40px); /* Limit its width to ensure it doesn't touch the edge of the screen */
     border-radius: 10px; /* Adjust the value to control the roundness */
     background-color: white; /* Set background color */
     padding: 10px; /* Add padding for spacing around the text */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     box-sizing: border-box;
-    grid-column: 4;
-    grid-row: 1;
+    margin: 10px;
 }
 
-
-
 .rounded-container-2 {
-  height: 50%;
+  position: absolute;
+  top: calc(50% - 425px); /* Adjust top position to move it up */
+  left: 0; /* Position on the left */
+  transform: translateY(-50%); /* Move it up by 50% of its own height */
   width: 50%;
+  max-width: calc(100% - 40px); /* Limit its width to ensure it doesn't touch the edge of the screen */
   border-radius: 10px; /* Adjust the value to control the roundness */
   background-color: white; /* Set background color */
   padding: 10px; /* Add padding for spacing around the text */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   box-sizing: border-box;
+  margin: 10px;
+}
 
+
+.rounded-container-3 {
+    position: absolute; /* Set position to absolute */
+    top: calc(50% - 425px); /* Adjust top position to move it up */
+    right: 0; /* Align to the right */
+    transform: translate(0, -50%); /* Move it up by 50% of its own height */
+    max-width: calc(50% - 40px); /* Limit its width to ensure it doesn't touch the edge of the screen */
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: white; /* Set background color */
+    padding: 10px; /* Add padding for spacing around the text */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.rounded-container-4 {
+  position: absolute;
+  top: calc(50% - 425px); /* Adjust top position to move it up */
+  left: 0; /* Position on the left */
+  transform: translateY(-50%); /* Move it up by 50% of its own height */
+  width: 50%;
+  max-width: calc(100% - 40px); /* Limit its width to ensure it doesn't touch the edge of the screen */
+  border-radius: 10px; /* Adjust the value to control the roundness */
+  background-color: white; /* Set background color */
+  padding: 10px; /* Add padding for spacing around the text */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-sizing: border-box;
+  margin: 10px;
 }
 
 .rounded-img {
